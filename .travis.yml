@@ -1,0 +1,13 @@
+language: objective-c
+osx_image: xcode7.3
+install:
+- env
+- brew install argon/mas/mas
+- sw_vers
+- mas signin "$APPLE_USER" "$APPLE_PASSWORD"
+- mas install 1018109117
+- ls -l /Applications
+
+env:
+  global:
+    secure: YIDxU+QH3/5RHjAP5vei3GcnDOYJx7qrKuUefk1TmO1AaHAaP9IBVmeW9U+5BdPDGJWHEjMtp1aAzp7fJkNuxUxagsOcQ9/jrGZIRVs1IDfO45pKN+qZmQ8m4DnLwmdOyFIgdYYoU/MdcrQMsTO0lwK0Yiknt24H6KLHbLwRR5DshkY+oa4QVLbYI9vHG7mL7XZsSxIcOUTt0vSrY/K2Weiuleg1ae0S8QgvIZqFMheGm2PYhtlMMEfRD5UFvDiMx/bid+GrDo8+rzQGoOlRqS9jI4ciUcJTAn7CVNU+rFaXjsuV8ot5qR8BYqNYaLv1eLXbGKVjOtIdNNpUqaSusjjFlB2QCSmJAdAUoh6Y4PzYIRhUcu2xOwpDH4PjBNJbljB95v8/ppTKKEVgOU3E3yHnPYLFpUdCaeBgedFpFr+2mswE9pIR7dfOdbF+PDPqFssZeJ5iu+NYetZ8Fta87AlOrLo/hQ3dQpIsdil2+Bx03cew/aTpOmlgb3SbM1av/1tyH1t5l3RHuWE64l0y8YTWgF+e/qZzW3yB8tny8UjmLfj/hRnh/xaaNroLh0l2HQAct8c4neSyZ3goFGiJwnuKUoUk3MDN/xuiGyHrr75EgFWHthcBiC77CjGv5HKZQv+IfwDZjbE06RtkKfpdcufaUrx1kRSblRFqtC358jY=
