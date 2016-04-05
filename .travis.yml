@@ -4,7 +4,7 @@ install:
 - env
 - brew install argon/mas/mas
 - sw_vers
-- mas signin "$APPLE_USER" "$APPLE_PASSWORD"
+- mas signin "$APPLE_USERNAME" "$APPLE_PASSWORD"
 - mas install 1018109117
 - ls -l /Applications
 
