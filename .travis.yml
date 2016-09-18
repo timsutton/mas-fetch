@@ -2,7 +2,8 @@ language: objective-c
 osx_image: xcode7.3
 install:
 - ./set_storefront.py
-- brew install argon/mas/mas
+- brew update
+- brew install mas
 - sw_vers
 - mas signin "$APPLE_USERNAME" "$APPLE_PASSWORD"
 - mas install 1018109117
